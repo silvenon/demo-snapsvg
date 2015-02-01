@@ -1,5 +1,7 @@
 # A [Snap.svg](http://snapsvg.io/) demo
 
+You need to start the server in order for AJAX calls to work:
+
 ```sh
 $ python -m SimpleHTTPServer
 ```
