@@ -9,9 +9,14 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/snap.svg/0.3.0/snap.svg-min.js"></script>
   <script>
     var s = Snap('#svg');
+    var test = function (f) {
+      console.log(f.select('#star'));
+      s.add(f);
+      console.log(f.select('#star'));
+    };
 
-    Snap.load('star1.svg', function (f) { console.log(f.select('.star')); });
-    Snap.load('star2.svg', function (f) { console.log(f.select('.star')); });
+    Snap.load('star1.svg', test);
+    Snap.load('star2.svg', test);
   </script>
 </body>
 </html>
